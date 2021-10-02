@@ -21,7 +21,7 @@ def longest_run(mylist, key):
         if size > max_size:
             max_size = size
         else:
-            size = 0
+            size = 1
     return max_size
 
 
