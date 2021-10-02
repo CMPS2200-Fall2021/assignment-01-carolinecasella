@@ -2,51 +2,50 @@
 
 # CMPS 2200 Assignment 1
 
-**Name:**_________________________
+**Name:** Caroline Casella
 
 
-In this assignment, you will learn more about asymptotic notation, parallelism, functional languages, and algorithmic cost models. As in the recitation, some of your answer will go here and some will go in `main.py`. You are welcome to edit this `assignment-01.md` file directly, or print and fill in by hand. If you do the latter, please scan to a file `assignment-01.pdf` and push to your github repository. 
-  
-  
+In this assignment, you will learn more about asymptotic notation, parallelism, functional languages, and algorithmic cost models. As in the recitation, some of your answer will go here and some will go in `main.py`. You are welcome to edit this `assignment-01.md` file directly, or print and fill in by hand. If you do the latter, please scan to a file `assignment-01.pdf` and push to your github repository.
+
+
 
 1. **Asymptotic notation**
 
-  - 1a. Is $2^{n+1} \in O(2^n)$? Why or why not? 
+  - 1a. Is $2^{n+1} \in O(2^n)$? Why or why not?
+.  YES
+.  Because is asympotically dominates the other
 .  
 .  
-.  
-.  
-. 
+.
   - 1b. Is $2^{2^n} \in O(2^n)$? Why or why not?     
-.  
+.  NO
 .  
 .  
 .  
 .  
   - 1c. Is $n^{1.01} \in O(\mathrm{log}^2 n)$?    
-.  
-.  
+.  NO
 .  
 .  
 
   - 1d. Is $n^{1.01} \in \Omega(\mathrm{log}^2 n)$?  
-.  
+.  YES
 .  
 .  
 .  
   - 1e. Is $\sqrt{n} \in O((\mathrm{log} n)^3)$?  
-.  
+.  YES
 .  
 .  
 .  
   - 1f. Is $\sqrt{n} \in \Omega((\mathrm{log} n)^3)$?  
-.  
+.  NO
 .  
 .  
 .  
 
   - 1g. Consider the definition of "Little o" notation:
-  
+
 $g(n) \in o(f(n))$ means that for **every** positive constant $c$, there exists a constant $n_0$ such that $g(n) \le c \cdot f(n)$ for all $n \ge n_0$. There is an analogous definition for "little omega" $\omega(f(n))$. The distinction between $o(f(n))$ and $O(f(n))$ is that the former requires the condition to be met for **every** $c$, not just for some $c$. For example, $10x \in o(x^2)$, but $10x^2 \notin o(x^2)$.  
 
 .  
@@ -81,7 +80,7 @@ $$
 ~~~~~~~~~~~~ra + rb\\  
 ~~~~~~~~\texttt{end}{}.\\
 \end{array}
-$$ 
+$$
 
   - 2a. Translate this to Python code -- fill in the `def foo` method in `main.py`  
 
@@ -93,7 +92,7 @@ $$
 .  
 .  
 .  
-  
+
 
 
 3. **Parallelism and recursion**
@@ -111,7 +110,7 @@ def longest_run(myarray, key)
    """
 ```
 E.g., `longest_run([2,12,12,8,12,12,12,0,12,1], 12) == 3`  
- 
+
   - 3a. First, implement an iterative, sequential version of `longest_run` in `main.py`.  
 
   - 3b. What is the Work and Span of this implementation?  
@@ -153,4 +152,3 @@ E.g., `longest_run([2,12,12,8,12,12,12,0,12,1], 12) == 3`
 .  
 .  
 .  
-
