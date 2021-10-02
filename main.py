@@ -12,7 +12,6 @@ def foo(x):
 
 
 def longest_run(mylist, key):
-    prev = None
     size = 1
     max_size = 0
     for i in range(len(mylist)):
