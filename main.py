@@ -12,7 +12,6 @@ def foo(x):
 
 
 def longest_run(mylist, key):
-    result = None
     prev = None
     size = 1
     max_size = 0
@@ -20,7 +19,6 @@ def longest_run(mylist, key):
         if (mylist[i] == key):
             size += 1
         if size > max_size:
-            result = mylist[i]
             max_size = size
         else:
             size = 0
